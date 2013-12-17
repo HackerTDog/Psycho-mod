@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>English Translation Version 1.2</comment>
+    <entry key="itemGroup.tabPsychoBlocks">Psycho Blocks</entry>
+    <entry key="itemGroup.tabPsychoItems">Psycho Items</entry>
+    <entry key="itemGroup.tabPsychoTools">Psycho Tools</entry>
+    <entry key="itemGroup.tabPsychoArmor">Psycho Armor</entry>
+    <entry key="tile.PsychoBlock.name">Psycho Block</entry>
+    <entry key="item.PsychoItem.name">Psycho Item</entry>
+    <entry key="item.pickPsycho.name">Psycho Pickaxe</entry>
+    <entry key="item.helmPsycho.name">Psycho Helm</entry>
+	</properties>
