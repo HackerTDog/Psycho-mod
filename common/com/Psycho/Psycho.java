@@ -12,6 +12,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import com.Psycho.localization.localizationHandler;
 import com.Psycho.manager.IBAManager;
 import com.Psycho.proxy.commonProxy;
+import com.Psycho.world.PsychoWorldGenerator;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -22,6 +23,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = "psycho", name = "Psycho Imagination", version = "0.1")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -50,22 +52,22 @@ public void load(FMLInitializationEvent event) {
 
 	PsychoBlocks = new CreativeTabs("tabPsychoBlocks") {
 		public ItemStack getIconItemStack() {
-			return new ItemStack(IBAManager.PsychoBlock, 1, 0);
+			return new ItemStack(IBAManager.blockPsycho, 1, 0);
 		}
 	};
 	PsychoItems = new CreativeTabs("tabPsychoItems") {
 		public ItemStack getIconItemStack() {
-			return new ItemStack(IBAManager.PsychoItem, 1, 0);
+			return new ItemStack(IBAManager.gemPsycho, 1, 0);
 		}
 	};
 	PsychoTools = new CreativeTabs("tabPsychoTools") {
 		public ItemStack getIconItemStack() {
-			return new ItemStack(IBAManager.PsychoPick, 1, 0);
+			return new ItemStack(IBAManager.pickPsycho, 1, 0);
 		}
 	};
 	PsychoArmor = new CreativeTabs("tabPsychoArmor") {
 		public ItemStack getIconItemStack() {
-			return new ItemStack(IBAManager.PsychoHelm, 1, 0);
+			return new ItemStack(IBAManager.helmPsycho, 1, 0);
 		}
 	};
 	
@@ -75,6 +77,7 @@ public void load(FMLInitializationEvent event) {
 	IBAManager.addTools(PsychoTools);
 	IBAManager.addArmor(PsychoArmor);
 	
+	GameRegistry.registerWorldGenerator(new PsychoWorldGenerator());
 }
 @EventHandler
 public void postInit(FMLPostInitializationEvent event) {

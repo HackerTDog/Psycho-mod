@@ -6,8 +6,16 @@
     <entry key="itemGroup.tabPsychoItems">Psycho Items</entry>
     <entry key="itemGroup.tabPsychoTools">Psycho Tools</entry>
     <entry key="itemGroup.tabPsychoArmor">Psycho Armor</entry>
-    <entry key="tile.PsychoBlock.name">Psycho Block</entry>
-    <entry key="item.PsychoItem.name">Psycho Item</entry>
+    <entry key="tile.blockPsycho.name">Psycho Block</entry>
+    <entry key="tile.orePsycho.name">Psycho Ore</entry>
+    <entry key="item.gemPsycho.name">Psycho Gem</entry>
     <entry key="item.pickPsycho.name">Psycho Pickaxe</entry>
+    <entry key="item.axePsycho.name">Psycho Axe</entry>
+    <entry key="item.shovelPsycho.name">Psycho Shovel</entry>
+    <entry key="item.swordPsycho.name">Psycho Sword</entry>
+    <entry key="item.hoePsycho.name">Psycho Hoe</entry>
     <entry key="item.helmPsycho.name">Psycho Helm</entry>
+    <entry key="item.chestPsycho.name">Psycho Chestplate</entry>
+    <entry key="item.legsPsycho.name">Psycho Leggings</entry>
+    <entry key="item.bootsPsycho.name">Psycho Boots</entry>
 	</properties>
